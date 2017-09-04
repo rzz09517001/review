@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hAp-2T-gaF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我-->
+        <scene sceneID="Poh-hS-Gz0">
+            <objects>
+                <viewController id="SW0-Cx-63A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DBb-dg-0u4"/>
+                        <viewControllerLayoutGuide type="bottom" id="fOn-wS-7lh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uw5-YF-T9p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我" image="tabbar-me" id="A7g-2Q-oqe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Esa-YQ-I6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="431"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="m4p-1O-4ir">
+            <objects>
+                <viewController id="oQx-ia-E23" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KKi-Kc-KXw"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Tm-yx-DSH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Fz-2k-lPn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="首页" id="QoK-Mb-D7A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEa-cO-THK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="-224.4377811094453"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bhJ-Vy-tJg">
+            <objects>
+                <tabBarController id="hAp-2T-gaF" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Z2z-7W-hmq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="oQx-ia-E23" kind="relationship" relationship="viewControllers" id="qyl-uo-y1Q"/>
+                        <segue destination="SW0-Cx-63A" kind="relationship" relationship="viewControllers" id="47I-5q-4z8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VFq-zi-ufg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-628" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar-me" width="26" height="26"/>
+    </resources>
+</document>
